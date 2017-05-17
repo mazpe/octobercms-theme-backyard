@@ -1,0 +1,11 @@
+<ul class="nav navbar-nav navbar-right">
+    <li class="{% if( this.page.id == 'home') %}active {% endif %}">
+        <a href="{{ 'home'|page }}">Home</a>
+    </li>
+    <li class="{% if( this.page.id == 'about') %}active {% endif %}">
+        <a href="{{ 'about'|page }}">About</a>
+    </li>
+    <li class="{% if( this.page.id == 'posts') %}active {% endif %}">
+        <a href="{{ 'posts'|page }}">Posts</a>
+    </li>
+</ul>
