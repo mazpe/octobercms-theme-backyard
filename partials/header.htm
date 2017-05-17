@@ -1,12 +1,37 @@
-// partials/header.htm
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>{{ this.page.title }}</title>
-    {% styles %}
+
+    <!-- /.website title -->
+    <title>Backyard Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS Files -->
+    
+	{% styles %}
+    <link href="{{
+            'assets/css/bootstrap.min.css'
+        |theme }}" rel="stylesheet" media="screen">
     <link href="{{ [
-            'assets/css/styles.css'
+            'assets/css/font-awesome.css',
+            'assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css'
         ]|theme }}" rel="stylesheet">
+    <link href="{{ [
+            'assets/css/animate.css'
+        ]|theme }}" rel="stylesheet" media="screen">
+    <link href="{{ [
+            'assets/css/owl.theme.css',
+            'assets/css/owl.carousel.css',
+        ]|theme }}" rel="stylesheet">
+
+    <link href="{{ [
+            'assets/css/css-index-yellow.css'
+        ]|theme }}" rel="stylesheet" media="screen">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+
 </head>
-<body>
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+
